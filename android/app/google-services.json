@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "977990357155",
+    "project_id": "icati-45490",
+    "storage_bucket": "icati-45490.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977990357155:android:bbbb8bcf6e001dd8ccef16",
+        "android_client_info": {
+          "package_name": "com.icati.icati_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977990357155-b19ndiiqdsr1oiki9geep9ep1fpdk1nj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.icati.icati_app",
+            "certificate_hash": "73e3d5f4f5c5a7df733c85d2438cd09654fd84f1"
+          }
+        },
+        {
+          "client_id": "977990357155-ebml1umrb60a0ai1h30emdjqq5p94t5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr8PjBcnOs9_wDtmG5ioo8kyXgFttuljw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977990357155-ebml1umrb60a0ai1h30emdjqq5p94t5j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
