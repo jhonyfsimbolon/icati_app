@@ -1,0 +1,1243 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.icati.icati_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:4:5-67
+14-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:5:5-79
+15-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:5:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:6:5-81
+16-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:6:22-78
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:7:5-64
+17-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:7:22-62
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:8:5-79
+18-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:8:22-77
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:9:5-80
+19-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:9:22-78
+20    <!--
+21 io.flutter.app.FlutterApplication is an android.app.Application that
+22         calls FlutterMain.startInitialization(this); in its onCreate method.
+23         In most cases you can leave this as-is, but you if you want to provide
+24         additional functionality it is fine to subclass or reimplement
+25         FlutterApplication and put your custom class here.
+26    -->
+27    <queries>
+27-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:16:10-37:15
+28
+29        <!-- If your app opens https URLs -->
+30        <intent>
+30-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:18:9-21:18
+31            <action android:name="android.intent.action.VIEW" />
+31-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:13-65
+31-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:21-62
+32
+33            <data android:scheme="https" />
+33-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+33-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+34        </intent>
+35        <!-- If your app makes calls -->
+36        <intent>
+36-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:18:9-21:18
+37            <action android:name="android.intent.action.DIAL" />
+38
+39            <data android:scheme="tel" />
+39-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+39-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+40        </intent>
+41        <!-- If your sends SMS messages -->
+42        <intent>
+42-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:18:9-21:18
+43            <action android:name="android.intent.action.SENDTO" />
+44
+45            <data android:scheme="smsto" />
+45-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+45-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+46        </intent>
+47        <!-- If your app sends emails -->
+48        <intent>
+48-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:18:9-21:18
+49            <action android:name="android.intent.action.SEND" />
+50
+51            <data android:mimeType="*/*" />
+51-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+52        </intent>
+53        <intent>
+53-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:18:9-21:18
+54            <action android:name="android.intent.action.GET_CONTENT" />
+55
+56            <data android:mimeType="*/*" />
+56-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+57        </intent>
+58        <intent>
+58-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:18:9-21:18
+59            <action android:name="android.support.customtabs.action.CustomTabsService" />
+60        </intent>
+61        <intent>
+61-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:18:9-21:18
+62            <action android:name="android.media.browse.MediaBrowserService" />
+63        </intent>
+64        <intent>
+64-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:18:9-21:18
+65            <action android:name="androidx.media2.session.MediaSessionService" />
+66        </intent>
+67        <intent>
+67-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:18:9-21:18
+68            <action android:name="androidx.media2.session.MediaLibraryService" />
+69        </intent>
+70    </queries>
+71
+72    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+72-->[:firebase_analytics] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+72-->[:firebase_analytics] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+73    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+73-->[:firebase_analytics] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-68
+73-->[:firebase_analytics] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-65
+74    <permission
+74-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:7:5-9:47
+75        android:name="com.icati.icati_app.permission.C2D_MESSAGE"
+75-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:8:9-63
+76        android:protectionLevel="signature" />
+76-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:9:9-44
+77
+78    <uses-permission android:name="com.icati.icati_app.permission.C2D_MESSAGE" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+78-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:11:5-79
+78-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:11:22-76
+79    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+79-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:17:5-82
+79-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:17:22-79
+80    <!--
+81 Required so the device vibrates on receiving a push notification.
+82         Vibration settings of the device still apply.
+83    -->
+84    <uses-permission android:name="android.permission.VIBRATE" />
+84-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:23:5-66
+84-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:23:22-63
+85    <!--
+86 Use to restore notifications the user hasn't interacted with.
+87         They could be missed notifications if the user reboots their device if this isn't in place.
+88    -->
+89    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+89-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:29:5-81
+89-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:29:22-78
+90    <!-- Samsung -->
+91    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+91-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:31:5-86
+91-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:31:22-83
+92    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+92-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:32:5-87
+92-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:32:22-84
+93    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+93-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:33:5-81
+93-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:33:22-78
+94    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+94-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:34:5-83
+94-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:34:22-80
+95    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+95-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:35:5-88
+95-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:35:22-85
+96    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+96-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:36:5-92
+96-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:36:22-89
+97    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+97-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:37:5-84
+97-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:37:22-81
+98    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+98-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:38:5-83
+98-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:38:22-80
+99    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+99-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:39:5-91
+99-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:39:22-88
+100    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+100-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:40:5-92
+100-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:40:22-89
+101    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+101-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:41:5-93
+101-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:41:22-90
+102    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+102-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:42:5-73
+102-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:42:22-70
+103    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+103-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:43:5-82
+103-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:43:22-79
+104    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+104-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:44:5-83
+104-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:44:22-80
+105    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+105-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:45:5-88
+105-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:45:22-85
+106    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+106-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:46:5-89
+106-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:46:22-86
+107    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+107-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:28:5-79
+107-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:28:22-76
+108    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+108-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:28:5-77
+108-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:28:22-74
+109    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+109-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:26:5-110
+109-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:26:22-107
+110
+111    <uses-feature
+111-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\acbf7a15fed492bbc8ca3c13f72e7120\transformed\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+112        android:glEsVersion="0x00020000"
+112-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\acbf7a15fed492bbc8ca3c13f72e7120\transformed\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+113        android:required="true" />
+113-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\acbf7a15fed492bbc8ca3c13f72e7120\transformed\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+114
+115    <application
+115-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:38:5-148:19
+116        android:name="io.flutter.app.FlutterApplication"
+116-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:39:9-57
+117        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+117-->[androidx.core:core:1.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\d6bfc7927487f71a61ff74e06bfd0719\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+118        android:debuggable="true"
+119        android:icon="@mipmap/launcher_icon"
+119-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:41:9-45
+120        android:label="ICATI"
+120-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:40:9-30
+121        android:supportsRtl="true"
+121-->[com.facebook.android:facebook-login:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\e470085f34dc5bd3a51c119d3f7384c3\transformed\facebook-login-13.0.0\AndroidManifest.xml:28:18-44
+122        android:usesCleartextTraffic="true" >
+122-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:42:9-44
+123        <activity
+123-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:43:9-127:20
+124            android:name="com.icati.icati_app.MainActivity"
+124-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:44:13-41
+125            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+125-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:47:13-163
+126            android:hardwareAccelerated="true"
+126-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:48:13-47
+127            android:launchMode="singleTop"
+127-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:45:13-43
+128            android:theme="@style/LaunchTheme"
+128-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:46:13-47
+129            android:windowSoftInputMode="adjustResize" >
+129-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:49:13-55
+130
+131            <!--
+132                 Specifies an Android theme to apply to this Activity as soon as
+133                 the Android process has started. This theme is visible to the user
+134                 while the Flutter UI initializes. After that, this theme continues
+135                 to determine the Window background behind the Flutter UI.
+136            -->
+137            <meta-data
+137-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:54:13-57:17
+138                android:name="io.flutter.embedding.android.NormalTheme"
+138-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:55:15-70
+139                android:resource="@style/NormalTheme" />
+139-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:56:15-52
+140            <!--
+141                 Displays an Android View that continues showing the launch screen
+142                 Drawable until Flutter paints its first frame, then this splash
+143                 screen fades out. A splash screen is useful to avoid any visual
+144                 gap between the end of Android's launch screen and the painting of
+145                 Flutter's first frame.
+146            -->
+147            <meta-data
+147-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:63:13-66:17
+148                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+148-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:64:15-79
+149                android:resource="@drawable/launch_background" />
+149-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:65:15-61
+150
+151            <intent-filter>
+151-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:67:13-70:29
+152                <action android:name="android.intent.action.MAIN" />
+152-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:68:17-68
+152-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:68:25-66
+153
+154                <category android:name="android.intent.category.LAUNCHER" />
+154-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:69:17-76
+154-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:69:27-74
+155            </intent-filter>
+156            <intent-filter>
+156-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:71:13-79:29
+157                <action android:name="android.intent.action.VIEW" />
+157-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:13-65
+157-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:21-62
+158
+159                <category android:name="android.intent.category.DEFAULT" />
+159-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:17-76
+159-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:27-73
+160                <category android:name="android.intent.category.BROWSABLE" />
+160-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:17-78
+160-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:27-75
+161
+162                <action android:name="android.intent.action.MAIN" />
+162-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:68:17-68
+162-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:68:25-66
+163
+164                <category android:name="android.intent.category.LAUNCHER" />
+164-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:69:17-76
+164-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:69:27-74
+165
+166                <data
+166-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+167                    android:host="icati-45490.firebaseapp.com"
+168                    android:scheme="https" />
+168-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+169            </intent-filter>
+170            <!-- Deep Links -->
+171            <intent-filter>
+171-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:81:13-99:29
+172                <action android:name="android.intent.action.VIEW" />
+172-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:13-65
+172-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:21-62
+173
+174                <category android:name="android.intent.category.DEFAULT" />
+174-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:17-76
+174-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:27-73
+175                <category android:name="android.intent.category.BROWSABLE" />
+175-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:17-78
+175-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:27-75
+176
+177                <data
+177-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+178                    android:host="icati.webby.digital"
+179                    android:pathPrefix="/member/reset-password"
+180                    android:scheme="https" />
+180-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+181                <!--
+182                     <data
+183                    android:scheme="https"
+184                    android:host="icati.webby.digital"
+185                    android:pathPrefix="/member/verifikasi-email"/>
+186                -->
+187                <data
+187-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+188                    android:host="icati.webby.digital"
+189                    android:pathPrefix="/member/verifikasi-change-email"
+190                    android:scheme="https" />
+190-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+191                <!--
+192                  <data
+193                  android:scheme="twittersdk://" />
+194                -->
+195            </intent-filter>
+196            <!-- twitter -->
+197            <intent-filter>
+197-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:101:13-108:29
+198                <action android:name="android.intent.action.VIEW" />
+198-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:13-65
+198-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:21-62
+199
+200                <category android:name="android.intent.category.DEFAULT" />
+200-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:17-76
+200-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:27-73
+201                <category android:name="android.intent.category.BROWSABLE" />
+201-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:17-78
+201-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:27-75
+202                <!-- Accepts URIs that begin with "example://gizmos” -->
+203                <data
+203-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+204                    android:host="gizmos"
+205                    android:scheme="example" />
+205-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+206            </intent-filter>
+207            <!-- App Links -->
+208            <!--
+209            <intent-filter android:autoVerify="true">
+210                <action android:name="android.intent.action.VIEW" />
+211                <category android:name="android.intent.category.DEFAULT" />
+212                <category android:name="android.intent.category.BROWSABLE" />
+213                <data
+214                    android:scheme="https"
+215                    android:host="icati.webby.digital"
+216                    android:pathPrefix="/member/reset-password"/>
+217                <data
+218                    android:scheme="https"
+219                    android:host="icati.webby.digital"
+220                    android:pathPrefix="/member/verifikasi-email"/>
+221                <data
+222                    android:scheme="https"
+223                    android:host="icati.webby.digital"
+224                    android:pathPrefix="/member/verifikasi-change-email"/>
+225            </intent-filter>
+226            -->
+227        </activity>
+228
+229        <meta-data
+229-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:128:9-108
+230            android:name="com.onesignal.NotificationAccentColor.DEFAULT"
+230-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:128:20-80
+231            android:value="FF0094C6" />
+231-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:128:81-105
+232        <!--
+233             Don't delete the meta-data below.
+234             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+235        -->
+236        <meta-data
+236-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:131:9-132:70
+237            android:name="com.google.android.geo.API_KEY"
+237-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:131:20-65
+238            android:value="AIzaSyDr8PjBcnOs9_wDtmG5ioo8kyXgFttuljw" />
+238-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:132:13-68
+239        <!-- android:value="AIzaSyACtcrgpH8YjEeX14etM26pSFAEcvuDoEk"/> -->
+240        <meta-data
+240-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:134:9-107
+241            android:name="com.facebook.sdk.ApplicationId"
+241-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:134:20-65
+242            android:value="@string/facebook_app_id" />
+242-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:134:66-105
+243
+244        <activity
+244-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:135:9-137:44
+245            android:name="com.facebook.FacebookActivity"
+245-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:135:19-63
+246            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+246-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:136:9-93
+247            android:label="@string/app_name"
+247-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:137:9-41
+248            android:theme="@style/com_facebook_activity_theme" />
+248-->[com.facebook.android:facebook-common:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\27d59a059e54fbee4423ae839383070d\transformed\facebook-common-13.0.0\AndroidManifest.xml:33:13-63
+249        <activity
+249-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:138:9-144:20
+250            android:name="com.facebook.CustomTabActivity"
+250-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:138:19-64
+251            android:exported="true" >
+251-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:138:65-88
+252            <intent-filter>
+252-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:139:13-143:29
+253                <action android:name="android.intent.action.VIEW" />
+253-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:13-65
+253-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:21-62
+254
+255                <category android:name="android.intent.category.DEFAULT" />
+255-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:17-76
+255-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:27-73
+256                <category android:name="android.intent.category.BROWSABLE" />
+256-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:17-78
+256-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:27-75
+257
+258                <data android:scheme="@string/fb_login_protocol_scheme" />
+258-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+258-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+259            </intent-filter>
+260            <intent-filter>
+260-->[com.facebook.android:facebook-common:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\27d59a059e54fbee4423ae839383070d\transformed\facebook-common-13.0.0\AndroidManifest.xml:39:13-48:29
+261                <action android:name="android.intent.action.VIEW" />
+261-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:13-65
+261-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:21-62
+262
+263                <category android:name="android.intent.category.DEFAULT" />
+263-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:17-76
+263-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:27-73
+264                <category android:name="android.intent.category.BROWSABLE" />
+264-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:17-78
+264-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:27-75
+265
+266                <data
+266-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+267                    android:host="cct.com.icati.icati_app"
+268                    android:scheme="fbconnect" />
+268-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+269            </intent-filter>
+270        </activity>
+271
+272        <meta-data
+272-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:145:9-147:33
+273            android:name="flutterEmbedding"
+273-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:146:13-44
+274            android:value="2" />
+274-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:147:13-30
+275
+276        <service
+276-->[:firebase_dynamic_links] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_dynamic_links\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:19
+277            android:name="com.google.firebase.components.ComponentDiscoveryService"
+277-->[:firebase_dynamic_links] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_dynamic_links\intermediates\library_manifest\debug\AndroidManifest.xml:10:18-89
+278            android:directBootAware="true"
+278-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\514894ffabdf7abf429ef82b9ebf7ac1\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+279            android:exported="false" >
+279-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9678d98d1cdf386e48d53c43256f5cfb\transformed\firebase-iid-21.1.0\AndroidManifest.xml:31:13-37
+280            <meta-data
+280-->[:firebase_dynamic_links] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_dynamic_links\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-13:85
+281                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
+281-->[:firebase_dynamic_links] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_dynamic_links\intermediates\library_manifest\debug\AndroidManifest.xml:12:17-131
+282                android:value="com.google.firebase.components.ComponentRegistrar" />
+282-->[:firebase_dynamic_links] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_dynamic_links\intermediates\library_manifest\debug\AndroidManifest.xml:13:17-82
+283            <meta-data
+283-->[:firebase_analytics] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:85
+284                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
+284-->[:firebase_analytics] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-127
+285                android:value="com.google.firebase.components.ComponentRegistrar" />
+285-->[:firebase_analytics] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-82
+286            <meta-data
+286-->[:firebase_auth] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+287                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+287-->[:firebase_auth] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+288                android:value="com.google.firebase.components.ComponentRegistrar" />
+288-->[:firebase_auth] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+289            <meta-data
+289-->[:firebase_core] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+290                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+290-->[:firebase_core] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+291                android:value="com.google.firebase.components.ComponentRegistrar" />
+291-->[:firebase_core] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+292            <meta-data
+292-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9678d98d1cdf386e48d53c43256f5cfb\transformed\firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+293                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+293-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9678d98d1cdf386e48d53c43256f5cfb\transformed\firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+294                android:value="com.google.firebase.components.ComponentRegistrar" />
+294-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9678d98d1cdf386e48d53c43256f5cfb\transformed\firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+295            <meta-data
+295-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+296                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+296-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+297                android:value="com.google.firebase.components.ComponentRegistrar" />
+297-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+298            <meta-data
+298-->[com.google.firebase:firebase-dynamic-links:21.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5dc43b74750c937fb04f737edd7c9e0f\transformed\firebase-dynamic-links-21.0.0\AndroidManifest.xml:27:13-29:85
+299                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+299-->[com.google.firebase:firebase-dynamic-links:21.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5dc43b74750c937fb04f737edd7c9e0f\transformed\firebase-dynamic-links-21.0.0\AndroidManifest.xml:28:17-133
+300                android:value="com.google.firebase.components.ComponentRegistrar" />
+300-->[com.google.firebase:firebase-dynamic-links:21.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\5dc43b74750c937fb04f737edd7c9e0f\transformed\firebase-dynamic-links-21.0.0\AndroidManifest.xml:29:17-82
+301            <meta-data
+301-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:52:13-54:85
+302                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+302-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:53:17-119
+303                android:value="com.google.firebase.components.ComponentRegistrar" />
+303-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:54:17-82
+304            <meta-data
+304-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\3ff618f22dbf596a8dd905f63ca37648\transformed\play-services-measurement-api-20.0.2\AndroidManifest.xml:30:13-32:85
+305                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+305-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\3ff618f22dbf596a8dd905f63ca37648\transformed\play-services-measurement-api-20.0.2\AndroidManifest.xml:31:17-139
+306                android:value="com.google.firebase.components.ComponentRegistrar" />
+306-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\3ff618f22dbf596a8dd905f63ca37648\transformed\play-services-measurement-api-20.0.2\AndroidManifest.xml:32:17-82
+307            <meta-data
+307-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\1b058f7ef1b0e040aaf09b81d5bdea84\transformed\firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+308                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+308-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\1b058f7ef1b0e040aaf09b81d5bdea84\transformed\firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+309                android:value="com.google.firebase.components.ComponentRegistrar" />
+309-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\1b058f7ef1b0e040aaf09b81d5bdea84\transformed\firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+310            <meta-data
+310-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9fea4742a5c4c4ad95fc594242dfe45f\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+311                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+311-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9fea4742a5c4c4ad95fc594242dfe45f\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+312                android:value="com.google.firebase.components.ComponentRegistrar" />
+312-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9fea4742a5c4c4ad95fc594242dfe45f\transformed\firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+313        </service>
+314
+315        <provider
+315-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+316            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+316-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+317            android:authorities="com.icati.icati_app.flutter.image_provider"
+317-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+318            android:exported="false"
+318-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+319            android:grantUriPermissions="true" >
+319-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+320            <meta-data
+320-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+321                android:name="android.support.FILE_PROVIDER_PATHS"
+321-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+322                android:resource="@xml/flutter_image_picker_file_paths" />
+322-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+323        </provider>
+324        <provider
+324-->[:share] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\share\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+325            android:name="io.flutter.plugins.share.ShareFileProvider"
+325-->[:share] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\share\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-70
+326            android:authorities="com.icati.icati_app.flutter.share_provider"
+326-->[:share] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\share\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+327            android:exported="false"
+327-->[:share] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\share\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+328            android:grantUriPermissions="true" >
+328-->[:share] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\share\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+329            <meta-data
+329-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+330                android:name="android.support.FILE_PROVIDER_PATHS"
+330-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+331                android:resource="@xml/flutter_share_file_paths" />
+331-->[:image_picker] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+332        </provider>
+333
+334        <activity android:name="com.maru.twitter_login.chrome_custom_tabs.ChromeCustomTabsActivity" />
+334-->[:twitter_login] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\twitter_login\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-103
+334-->[:twitter_login] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\twitter_login\intermediates\library_manifest\debug\AndroidManifest.xml:14:19-100
+335        <activity
+335-->[:url_launcher] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+336            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+336-->[:url_launcher] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+337            android:exported="false"
+337-->[:url_launcher] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+338            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+338-->[:url_launcher] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+339
+340        <service
+340-->[:location] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-15:56
+341            android:name="com.lyokone.location.FlutterLocationService"
+341-->[:location] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-71
+342            android:enabled="true"
+342-->[:location] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-35
+343            android:exported="false"
+343-->[:location] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+344            android:foregroundServiceType="location" />
+344-->[:location] C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-53
+345
+346        <receiver
+346-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:49:9-60:20
+347            android:name="com.onesignal.FCMBroadcastReceiver"
+347-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:50:13-62
+348            android:exported="true"
+348-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:51:13-36
+349            android:permission="com.google.android.c2dm.permission.SEND" >
+349-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:52:13-73
+350
+351            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+352            <intent-filter android:priority="999" >
+352-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:55:13-59:29
+352-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:55:28-50
+353                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+353-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:56:17-81
+353-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:56:25-78
+354
+355                <category android:name="com.icati.icati_app" />
+355-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:58:17-61
+355-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:58:27-58
+356            </intent-filter>
+357        </receiver>
+358
+359        <service
+359-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:62:9-68:19
+360            android:name="com.onesignal.HmsMessageServiceOneSignal"
+360-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:63:13-68
+361            android:exported="false" >
+361-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:64:13-37
+362            <intent-filter>
+362-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:65:13-67:29
+363                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+363-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:66:17-81
+363-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:66:25-78
+364            </intent-filter>
+365        </service>
+366
+367        <activity
+367-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:70:9-78:20
+368            android:name="com.onesignal.NotificationOpenedActivityHMS"
+368-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:71:13-71
+369            android:exported="true"
+369-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:72:13-36
+370            android:noHistory="true"
+370-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:73:13-37
+371            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+371-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:74:13-72
+372            <intent-filter>
+372-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:75:13-77:29
+373                <action android:name="android.intent.action.VIEW" />
+373-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:13-65
+373-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:21-62
+374            </intent-filter>
+375        </activity>
+376
+377        <service
+377-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:80:9-82:40
+378            android:name="com.onesignal.FCMIntentService"
+378-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:81:13-58
+379            android:exported="false" />
+379-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:82:13-37
+380        <service
+380-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:83:9-86:72
+381            android:name="com.onesignal.FCMIntentJobService"
+381-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:84:13-61
+382            android:exported="false"
+382-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:85:13-37
+383            android:permission="android.permission.BIND_JOB_SERVICE" />
+383-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:86:13-69
+384        <service
+384-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:87:9-90:43
+385            android:name="com.onesignal.SyncService"
+385-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:88:13-53
+386            android:exported="false"
+386-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:89:13-37
+387            android:stopWithTask="true" />
+387-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:90:13-40
+388        <service
+388-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:91:9-94:72
+389            android:name="com.onesignal.SyncJobService"
+389-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:92:13-56
+390            android:exported="false"
+390-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:93:13-37
+391            android:permission="android.permission.BIND_JOB_SERVICE" />
+391-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:94:13-69
+392
+393        <activity
+393-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:96:9-99:75
+394            android:name="com.onesignal.PermissionsActivity"
+394-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:97:13-61
+395            android:exported="false"
+395-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:98:13-37
+396            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+396-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:99:13-72
+397
+398        <receiver
+398-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:101:9-103:39
+399            android:name="com.onesignal.NotificationDismissReceiver"
+399-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:102:13-69
+400            android:exported="true" />
+400-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:103:13-36
+401        <receiver
+401-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:104:9-111:20
+402            android:name="com.onesignal.BootUpReceiver"
+402-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:105:13-56
+403            android:exported="true" >
+403-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:106:13-36
+404            <intent-filter>
+404-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:107:13-110:29
+405                <action android:name="android.intent.action.BOOT_COMPLETED" />
+405-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:108:17-79
+405-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:108:25-76
+406                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+406-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:109:17-82
+406-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:109:25-79
+407            </intent-filter>
+408        </receiver>
+409        <receiver
+409-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:112:9-118:20
+410            android:name="com.onesignal.UpgradeReceiver"
+410-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:113:13-57
+411            android:exported="true" >
+411-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:114:13-36
+412            <intent-filter>
+412-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:115:13-117:29
+413                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+413-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:116:17-84
+413-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:116:25-81
+414            </intent-filter>
+415        </receiver>
+416
+417        <activity
+417-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:120:9-126:75
+418            android:name="com.onesignal.NotificationOpenedReceiver"
+418-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:121:13-68
+419            android:excludeFromRecents="true"
+419-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:122:13-46
+420            android:exported="true"
+420-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:123:13-36
+421            android:noHistory="true"
+421-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:124:13-37
+422            android:taskAffinity=""
+422-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:125:13-36
+423            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+423-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:126:13-72
+424        <activity
+424-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:127:9-132:75
+425            android:name="com.onesignal.NotificationOpenedReceiverAndroid22AndOlder"
+425-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:128:13-85
+426            android:excludeFromRecents="true"
+426-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:129:13-46
+427            android:exported="true"
+427-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:130:13-36
+428            android:noHistory="true"
+428-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:131:13-37
+429            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+429-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:132:13-72
+430        <activity
+430-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+431            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+431-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+432            android:excludeFromRecents="true"
+432-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+433            android:exported="true"
+433-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+434            android:launchMode="singleTask"
+434-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+435            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+435-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+436            <intent-filter>
+436-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+437                <action android:name="android.intent.action.VIEW" />
+437-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:13-65
+437-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:21-62
+438
+439                <category android:name="android.intent.category.DEFAULT" />
+439-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:17-76
+439-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:27-73
+440                <category android:name="android.intent.category.BROWSABLE" />
+440-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:17-78
+440-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:27-75
+441
+442                <data
+442-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+443                    android:host="firebase.auth"
+444                    android:path="/"
+445                    android:scheme="genericidp" />
+445-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+446            </intent-filter>
+447        </activity>
+448        <activity
+448-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+449            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+449-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+450            android:excludeFromRecents="true"
+450-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+451            android:exported="true"
+451-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+452            android:launchMode="singleTask"
+452-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+453            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+453-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+454            <intent-filter>
+454-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+455                <action android:name="android.intent.action.VIEW" />
+455-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:13-65
+455-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:19:21-62
+456
+457                <category android:name="android.intent.category.DEFAULT" />
+457-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:17-76
+457-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:27-73
+458                <category android:name="android.intent.category.BROWSABLE" />
+458-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:17-78
+458-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:74:27-75
+459
+460                <data
+460-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:13-44
+461                    android:host="firebase.auth"
+462                    android:path="/"
+463                    android:scheme="recaptcha" />
+463-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:20:19-41
+464            </intent-filter>
+465        </activity>
+466
+467        <service
+467-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+468            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+468-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+469            android:enabled="true"
+469-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+470            android:exported="false" >
+470-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+471            <intent-filter>
+471-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+472                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+472-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+472-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2eabb8cbfe9adbacb62cde5329c19ca6\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+473
+474                <category android:name="android.intent.category.DEFAULT" />
+474-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:17-76
+474-->C:\Users\LENOVO\Documents\Webby Project Jhony\ICATI\android\app\src\main\AndroidManifest.xml:73:27-73
+475            </intent-filter>
+476        </service>
+477
+478        <receiver
+478-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:28:9-35:20
+479            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+479-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:29:13-78
+480            android:exported="true"
+480-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:30:13-36
+481            android:permission="com.google.android.c2dm.permission.SEND" >
+481-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:31:13-73
+482            <intent-filter>
+482-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:32:13-34:29
+483                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+483-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:56:17-81
+483-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:56:25-78
+484            </intent-filter>
+485        </receiver>
+486        <!--
+487             FirebaseMessagingService performs security checks at runtime,
+488             but set to not exported to explicitly avoid allowing another app to call it.
+489        -->
+490        <service
+490-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:41:9-48:19
+491            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+491-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:42:13-82
+492            android:directBootAware="true"
+492-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:43:13-43
+493            android:exported="false" >
+493-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:44:13-37
+494            <intent-filter android:priority="-500" >
+494-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:45:13-47:29
+494-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:45:28-51
+495                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+495-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:46:17-78
+495-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\21ede5e3ba79cb35765c6eb4a576f995\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:46:25-75
+496            </intent-filter>
+497        </service>
+498
+499        <provider
+499-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\514894ffabdf7abf429ef82b9ebf7ac1\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+500            android:name="com.google.firebase.provider.FirebaseInitProvider"
+500-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\514894ffabdf7abf429ef82b9ebf7ac1\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+501            android:authorities="com.icati.icati_app.firebaseinitprovider"
+501-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\514894ffabdf7abf429ef82b9ebf7ac1\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+502            android:directBootAware="true"
+502-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\514894ffabdf7abf429ef82b9ebf7ac1\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+503            android:exported="false"
+503-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\514894ffabdf7abf429ef82b9ebf7ac1\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+504            android:initOrder="100" />
+504-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\514894ffabdf7abf429ef82b9ebf7ac1\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+505
+506        <activity android:name="com.facebook.CustomTabMainActivity" />
+506-->[com.facebook.android:facebook-common:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\27d59a059e54fbee4423ae839383070d\transformed\facebook-common-13.0.0\AndroidManifest.xml:34:9-71
+506-->[com.facebook.android:facebook-common:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\27d59a059e54fbee4423ae839383070d\transformed\facebook-common-13.0.0\AndroidManifest.xml:34:19-68
+507        <!--
+508         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+509         with the application context. This config is merged in with the host app's manifest,
+510         but there can only be one provider with the same authority activated at any given
+511         point; so if the end user has two or more different apps that use Facebook SDK, only the
+512         first one will be able to use the provider. To work around this problem, we use the
+513         following placeholder in the authority to identify each host application as if it was
+514         a completely different provider.
+515        -->
+516        <provider
+516-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:41:9-44:40
+517            android:name="com.facebook.internal.FacebookInitProvider"
+517-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:42:13-70
+518            android:authorities="com.icati.icati_app.FacebookInitProvider"
+518-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:43:13-72
+519            android:exported="false" />
+519-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:44:13-37
+520
+521        <receiver
+521-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:46:9-52:20
+522            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+522-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:47:13-86
+523            android:exported="false" >
+523-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:48:13-37
+524            <intent-filter>
+524-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:49:13-51:29
+525                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+525-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:50:17-95
+525-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:50:25-92
+526            </intent-filter>
+527        </receiver>
+528        <receiver
+528-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:53:9-59:20
+529            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+529-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:54:13-118
+530            android:exported="false" >
+530-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:55:13-37
+531            <intent-filter>
+531-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:56:13-58:29
+532                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+532-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:57:17-103
+532-->[com.facebook.android:facebook-core:13.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c7de0a30eea1ba1177bfdf23cde10600\transformed\jetified-facebook-core-13.0.0\AndroidManifest.xml:57:25-100
+533            </intent-filter>
+534        </receiver>
+535
+536        <provider
+536-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:31:9-39:20
+537            android:name="androidx.startup.InitializationProvider"
+537-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:32:13-67
+538            android:authorities="com.icati.icati_app.androidx-startup"
+538-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:33:13-68
+539            android:exported="false" >
+539-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:34:13-37
+540            <meta-data
+540-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:36:13-38:52
+541                android:name="androidx.work.WorkManagerInitializer"
+541-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:37:17-68
+542                android:value="androidx.startup" />
+542-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:38:17-49
+543        </provider>
+544
+545        <service
+545-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:41:9-46:35
+546            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+546-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:42:13-88
+547            android:directBootAware="false"
+547-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:43:13-44
+548            android:enabled="@bool/enable_system_alarm_service_default"
+548-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:44:13-72
+549            android:exported="false" />
+549-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:45:13-37
+550        <service
+550-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:47:9-53:35
+551            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+551-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:48:13-84
+552            android:directBootAware="false"
+552-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:49:13-44
+553            android:enabled="@bool/enable_system_job_service_default"
+553-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:50:13-70
+554            android:exported="true"
+554-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:51:13-36
+555            android:permission="android.permission.BIND_JOB_SERVICE" />
+555-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:52:13-69
+556        <service
+556-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:54:9-59:35
+557            android:name="androidx.work.impl.foreground.SystemForegroundService"
+557-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:55:13-81
+558            android:directBootAware="false"
+558-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:56:13-44
+559            android:enabled="@bool/enable_system_foreground_service_default"
+559-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:57:13-77
+560            android:exported="false" />
+560-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:58:13-37
+561
+562        <receiver
+562-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:61:9-66:35
+563            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+563-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:62:13-88
+564            android:directBootAware="false"
+564-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:63:13-44
+565            android:enabled="true"
+565-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:64:13-35
+566            android:exported="false" />
+566-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:65:13-37
+567        <receiver
+567-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:67:9-77:20
+568            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+568-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:68:13-106
+569            android:directBootAware="false"
+569-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:69:13-44
+570            android:enabled="false"
+570-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:70:13-36
+571            android:exported="false" >
+571-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:71:13-37
+572            <intent-filter>
+572-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:73:13-76:29
+573                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+573-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:74:17-87
+573-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:74:25-84
+574                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+574-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:75:17-90
+574-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:75:25-87
+575            </intent-filter>
+576        </receiver>
+577        <receiver
+577-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:78:9-88:20
+578            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+578-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:79:13-104
+579            android:directBootAware="false"
+579-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:80:13-44
+580            android:enabled="false"
+580-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:81:13-36
+581            android:exported="false" >
+581-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:82:13-37
+582            <intent-filter>
+582-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:84:13-87:29
+583                <action android:name="android.intent.action.BATTERY_OKAY" />
+583-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:85:17-77
+583-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:85:25-74
+584                <action android:name="android.intent.action.BATTERY_LOW" />
+584-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:86:17-76
+584-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:86:25-73
+585            </intent-filter>
+586        </receiver>
+587        <receiver
+587-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:89:9-99:20
+588            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+588-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:90:13-104
+589            android:directBootAware="false"
+589-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:91:13-44
+590            android:enabled="false"
+590-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:92:13-36
+591            android:exported="false" >
+591-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:93:13-37
+592            <intent-filter>
+592-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:95:13-98:29
+593                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+593-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:96:17-83
+593-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:96:25-80
+594                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+594-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:97:17-82
+594-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:97:25-79
+595            </intent-filter>
+596        </receiver>
+597        <receiver
+597-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:100:9-109:20
+598            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+598-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:101:13-103
+599            android:directBootAware="false"
+599-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:102:13-44
+600            android:enabled="false"
+600-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:103:13-36
+601            android:exported="false" >
+601-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:104:13-37
+602            <intent-filter>
+602-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:106:13-108:29
+603                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+603-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:107:17-79
+603-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:107:25-76
+604            </intent-filter>
+605        </receiver>
+606        <receiver
+606-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:110:9-121:20
+607            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+607-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:111:13-88
+608            android:directBootAware="false"
+608-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:112:13-44
+609            android:enabled="false"
+609-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:113:13-36
+610            android:exported="false" >
+610-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:114:13-37
+611            <intent-filter>
+611-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:116:13-120:29
+612                <action android:name="android.intent.action.BOOT_COMPLETED" />
+612-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:108:17-79
+612-->[com.onesignal:OneSignal:4.6.6] C:\Users\LENOVO\.gradle\caches\transforms-3\22888d95898d4cc62700cec7ec6eaf44\transformed\jetified-OneSignal-4.6.6\AndroidManifest.xml:108:25-76
+613                <action android:name="android.intent.action.TIME_SET" />
+613-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:118:17-73
+613-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:118:25-70
+614                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+614-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:119:17-81
+614-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:119:25-78
+615            </intent-filter>
+616        </receiver>
+617        <receiver
+617-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:122:9-131:20
+618            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+618-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:123:13-99
+619            android:directBootAware="false"
+619-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:124:13-44
+620            android:enabled="@bool/enable_system_alarm_service_default"
+620-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:125:13-72
+621            android:exported="false" >
+621-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:126:13-37
+622            <intent-filter>
+622-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:128:13-130:29
+623                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+623-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:129:17-98
+623-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:129:25-95
+624            </intent-filter>
+625        </receiver>
+626        <receiver
+626-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:132:9-142:20
+627            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+627-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:133:13-78
+628            android:directBootAware="false"
+628-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:134:13-44
+629            android:enabled="true"
+629-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:135:13-35
+630            android:exported="true"
+630-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:136:13-36
+631            android:permission="android.permission.DUMP" >
+631-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:137:13-57
+632            <intent-filter>
+632-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:139:13-141:29
+633                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+633-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:140:17-88
+633-->[androidx.work:work-runtime:2.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\144daf952ee8b071bf9fe5855a126ac7\transformed\work-runtime-2.6.0\AndroidManifest.xml:140:25-85
+634            </intent-filter>
+635        </receiver>
+636        <receiver
+636-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:29:9-33:20
+637            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+637-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:30:13-85
+638            android:enabled="true"
+638-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:31:13-35
+639            android:exported="false" >
+639-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:32:13-37
+640        </receiver>
+641
+642        <service
+642-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:35:9-38:40
+643            android:name="com.google.android.gms.measurement.AppMeasurementService"
+643-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:36:13-84
+644            android:enabled="true"
+644-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:37:13-35
+645            android:exported="false" />
+645-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:38:13-37
+646        <service
+646-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:39:9-43:72
+647            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+647-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:40:13-87
+648            android:enabled="true"
+648-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:41:13-35
+649            android:exported="false"
+649-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:42:13-37
+650            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+650-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\LENOVO\.gradle\caches\transforms-3\09c370703f42f31cbb0bcddf81491c4a\transformed\play-services-measurement-20.0.2\AndroidManifest.xml:43:13-69
+651        <uses-library
+651-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\acbf7a15fed492bbc8ca3c13f72e7120\transformed\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+652            android:name="org.apache.http.legacy"
+652-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\acbf7a15fed492bbc8ca3c13f72e7120\transformed\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+653            android:required="false" />
+653-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\acbf7a15fed492bbc8ca3c13f72e7120\transformed\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+654
+655        <activity
+655-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4906efdd01d3e73c7367a1c75025788e\transformed\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+656            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+656-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4906efdd01d3e73c7367a1c75025788e\transformed\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+657            android:excludeFromRecents="true"
+657-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4906efdd01d3e73c7367a1c75025788e\transformed\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+658            android:exported="false"
+658-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4906efdd01d3e73c7367a1c75025788e\transformed\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+659            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+659-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4906efdd01d3e73c7367a1c75025788e\transformed\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+660        <!--
+661            Service handling Google Sign-In user revocation. For apps that do not integrate with
+662            Google Sign-In, this service will never be started.
+663        -->
+664        <service
+664-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4906efdd01d3e73c7367a1c75025788e\transformed\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+665            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+665-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4906efdd01d3e73c7367a1c75025788e\transformed\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+666            android:exported="true"
+666-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4906efdd01d3e73c7367a1c75025788e\transformed\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+667            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+667-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\4906efdd01d3e73c7367a1c75025788e\transformed\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+668
+669        <activity
+669-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\849a643f6e66cecd574ef2526c373efb\transformed\play-services-base-17.6.0\AndroidManifest.xml:23:9-26:75
+670            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+670-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\849a643f6e66cecd574ef2526c373efb\transformed\play-services-base-17.6.0\AndroidManifest.xml:24:13-79
+671            android:exported="false"
+671-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\849a643f6e66cecd574ef2526c373efb\transformed\play-services-base-17.6.0\AndroidManifest.xml:25:13-37
+672            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+672-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\LENOVO\.gradle\caches\transforms-3\849a643f6e66cecd574ef2526c373efb\transformed\play-services-base-17.6.0\AndroidManifest.xml:26:13-72
+673
+674        <meta-data
+674-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\76230f784ed1e4c6cc69ca1b29385882\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+675            android:name="com.google.android.gms.version"
+675-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\76230f784ed1e4c6cc69ca1b29385882\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+676            android:value="@integer/google_play_services_version" />
+676-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\76230f784ed1e4c6cc69ca1b29385882\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+677
+678        <service
+678-->[androidx.room:room-runtime:2.2.5] C:\Users\LENOVO\.gradle\caches\transforms-3\7f80e6525869b72fb4ac97189171c8eb\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+679            android:name="androidx.room.MultiInstanceInvalidationService"
+679-->[androidx.room:room-runtime:2.2.5] C:\Users\LENOVO\.gradle\caches\transforms-3\7f80e6525869b72fb4ac97189171c8eb\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+680            android:directBootAware="true"
+680-->[androidx.room:room-runtime:2.2.5] C:\Users\LENOVO\.gradle\caches\transforms-3\7f80e6525869b72fb4ac97189171c8eb\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+681            android:exported="false" />
+681-->[androidx.room:room-runtime:2.2.5] C:\Users\LENOVO\.gradle\caches\transforms-3\7f80e6525869b72fb4ac97189171c8eb\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+682        <service
+682-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b775e0901ced1ffa7f1c1d7b233b796c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+683            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+683-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b775e0901ced1ffa7f1c1d7b233b796c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+684            android:exported="false" >
+684-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b775e0901ced1ffa7f1c1d7b233b796c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+685            <meta-data
+685-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b775e0901ced1ffa7f1c1d7b233b796c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+686                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+686-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b775e0901ced1ffa7f1c1d7b233b796c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+687                android:value="cct" />
+687-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\b775e0901ced1ffa7f1c1d7b233b796c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+688        </service>
+689        <service
+689-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\03625f232ffb8e56c5d9cd0f4892e068\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+690            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+690-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\03625f232ffb8e56c5d9cd0f4892e068\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+691            android:exported="false"
+691-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\03625f232ffb8e56c5d9cd0f4892e068\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+692            android:permission="android.permission.BIND_JOB_SERVICE" >
+692-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\03625f232ffb8e56c5d9cd0f4892e068\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+693        </service>
+694
+695        <receiver
+695-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\03625f232ffb8e56c5d9cd0f4892e068\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+696            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+696-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\03625f232ffb8e56c5d9cd0f4892e068\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+697            android:exported="false" />
+697-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\03625f232ffb8e56c5d9cd0f4892e068\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+698    </application>
+699
+700</manifest>

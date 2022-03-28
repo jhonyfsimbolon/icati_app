@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\twitter_login\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\twitter_login\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\twitter_login\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\twitter_login\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\twitter_login\\intermediates\\res\\merged\\release\\layout\\chrome_custom_tab.xml",
+        "source": "C:\\Users\\LENOVO\\Documents\\Mobile App Dev\\flutter_windows_2.8.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\twitter_login-4.1.0-dev\\android\\src\\main\\res\\layout\\chrome_custom_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\twitter_login\\intermediates\\res\\merged\\release\\layout\\browser_actions_context_menu_row.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\88de27c0e5f7ab3e199bb0bdeaf0f918\\transformed\\browser-1.3.0\\res\\layout\\browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\twitter_login\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\twitter_login\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\twitter_login\\intermediates\\res\\merged\\release\\layout\\browser_actions_context_menu_page.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\88de27c0e5f7ab3e199bb0bdeaf0f918\\transformed\\browser-1.3.0\\res\\layout\\browser_actions_context_menu_page.xml"
+    }
+]

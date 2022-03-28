@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\sign_in_with_apple\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-mn\\values-mn.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\100644dbd8dccbb42ea817d4d177ba0d\\transformed\\browser-1.2.0\\res\\values-mn\\values-mn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,160,264,369",
+                        "endColumns": "104,103,104,106",
+                        "endOffsets": "155,259,364,471"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\values-mn\\values-mn.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "476",
+                        "endColumns": "100",
+                        "endOffsets": "572"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\sign_in_with_apple\\intermediates\\res\\merged\\release\\values-mn\\values-mn.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\100644dbd8dccbb42ea817d4d177ba0d\\transformed\\browser-1.2.0\\res\\values-mn\\values-mn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,160,264,369",
+                        "endColumns": "104,103,104,106",
+                        "endOffsets": "155,259,364,471"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\values-mn\\values-mn.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "476",
+                        "endColumns": "100",
+                        "endOffsets": "572"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\just_audio\\intermediates\\res\\merged\\release\\values-mk\\values-mk.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\values-mk\\values-mk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "626",
+                        "endColumns": "100",
+                        "endOffsets": "722"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\values-mk\\values-mk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,167,267,363,490",
+                        "endColumns": "111,99,95,126,135",
+                        "endOffsets": "162,262,358,485,621"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\just_audio\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-mk\\values-mk.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\values-mk\\values-mk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "626",
+                        "endColumns": "100",
+                        "endOffsets": "722"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\values-mk\\values-mk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,167,267,363,490",
+                        "endColumns": "111,99,95,126,135",
+                        "endOffsets": "162,262,358,485,621"
+                    }
+                }
+            ]
+        }
+    ]
+}

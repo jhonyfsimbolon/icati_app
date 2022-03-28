@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\google_maps_flutter\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\f7cbc37103f00aff89aa3d97eed294ac\\transformed\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\google_maps_flutter\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\f7cbc37103f00aff89aa3d97eed294ac\\transformed\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\google_maps_flutter\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\f7cbc37103f00aff89aa3d97eed294ac\\transformed\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_tint.xml"
+    }
+]

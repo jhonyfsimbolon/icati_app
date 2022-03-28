@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\just_audio\\intermediates\\res\\merged\\release\\drawable-anydpi-v21\\media_session_service_notification_ic_skip_to_previous.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\drawable-anydpi-v21\\media_session_service_notification_ic_skip_to_previous.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\just_audio\\intermediates\\res\\merged\\release\\drawable-anydpi-v21\\media_session_service_notification_ic_play.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\drawable-anydpi-v21\\media_session_service_notification_ic_play.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\just_audio\\intermediates\\res\\merged\\release\\drawable-anydpi-v21\\media_session_service_notification_ic_pause.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\drawable-anydpi-v21\\media_session_service_notification_ic_pause.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\just_audio\\intermediates\\res\\merged\\release\\drawable-anydpi-v21\\media_session_service_notification_ic_skip_to_next.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\drawable-anydpi-v21\\media_session_service_notification_ic_skip_to_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\just_audio\\intermediates\\res\\merged\\release\\drawable-anydpi-v21\\media_session_service_notification_ic_music_note.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\drawable-anydpi-v21\\media_session_service_notification_ic_music_note.xml"
+    }
+]

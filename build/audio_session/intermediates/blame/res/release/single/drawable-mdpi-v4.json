@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\media_session_service_notification_ic_music_note.png",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\drawable-mdpi-v4\\media_session_service_notification_ic_music_note.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\media_session_service_notification_ic_play.png",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\drawable-mdpi-v4\\media_session_service_notification_ic_play.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\media_session_service_notification_ic_pause.png",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\drawable-mdpi-v4\\media_session_service_notification_ic_pause.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\media_session_service_notification_ic_skip_to_previous.png",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\drawable-mdpi-v4\\media_session_service_notification_ic_skip_to_previous.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\media_session_service_notification_ic_skip_to_next.png",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\95d8be6cb73c6cadc44a55b3d9a869a2\\transformed\\media2-session-1.1.3\\res\\drawable-mdpi-v4\\media_session_service_notification_ic_skip_to_next.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\audio_session\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\d6bfc7927487f71a61ff74e06bfd0719\\transformed\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    }
+]

@@ -1,0 +1,4 @@
+#Fri Mar 25 14:50:47 ICT 2022
+base.0=C\:\\Users\\LENOVO\\Documents\\Webby Project Jhony\\ICATI\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
